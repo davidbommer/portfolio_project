@@ -26,7 +26,7 @@ SECRET_KEY = '!u0*$19q1wmy#e7$(mn&l$$errx!mh60-@g)_jx)=wb(3r@)*i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['67.207.80.139', 'localhost']
+ALLOWED_HOSTS = ['67.207.80.139', 'localhost', 'davidbommersbach.com', 'www.davidbommersbach.com']
 
 
 # Application definition
@@ -134,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio_project/static/')]
 
-try: 
+try:
     from local_settings import *
 except ImportError:
     pass
