@@ -74,46 +74,20 @@
 
     <main role="main" class='bg-secondary'>
 
-    <section class="jumbotron text-center bg">
-      <div class="container">
-        <h1 class='text-white'>Welcome to my website!</h1>
-        <p class="lead text-light">I made this website from scratch using Django; I set it up with Postgres, Nginx, and Gunicorn on an Ubuntu 18.04 server.</p>
-        <p>
-          <a href="mailto:davidbommersbach@gmail.com" class="btn btn-primary my-2">Contact me!</a>
-        </p>
-
-      </div>
-    </section>
-    <h2 class='text-center'>Below are some of my very impressive projects</h2>
-    <div class="album py-5">
-      <div class="container bg-dark">
-
-        <div class="row">
-          
-          {%for job in jobs.all%}
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src={{job.image.url}}></img>
-              <div class="card-body">
-                <p class="card-text">{{job.text}}</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a type="button" class="btn btn-sm btn-outline-secondary" href="{% url 'job_details' job.id %}">View</a>
-                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="popover" title="This is MY website." data-content="You have no power here.">Edit</button>
-                  </div>
-                  <small class="text-muted">{{job.pub_date_pretty}}</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          {%endfor%}
-          
-          
-        </div>
-      </div>
+    <div class='text-center'> 
+      <h1>Wanna play Sudoku?</h1> 
+      <p>
+      I wrote a backtracking sudoku solver and generator algorithm with Python. 
+      Click on the link below to go to the github repository. 
+      If you want to run the program make sure you have Python3. 
+      </p>
+      <img src={{job.image.url}} class="img-fluid" alt="Responsive image">
+      <br\>
+      <a href="https://github.com/davidbommer/sudoku" title="Go to my repository">Visit my git</a>
     </div>
+    
 
-  </main>
+    </main>
 
   <footer class="text-muted">
     <div class="container text-center">

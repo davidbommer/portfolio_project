@@ -7,4 +7,7 @@ def home(request):
 
 def job_details(request, job_id):
 	detail_job = get_object_or_404(Job, pk=job_id)
+	if detail_job.title.lower() == 'sudoku':
+		return render(request, 'jobs/sudoku.html', {'job':detail_job})
 	return render(request, 'jobs/job_details.html', {'job':detail_job})
+

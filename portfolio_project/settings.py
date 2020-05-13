@@ -26,7 +26,7 @@ SECRET_KEY = '!u0*$19q1wmy#e7$(mn&l$$errx!mh60-@g)_jx)=wb(3r@)*i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['67.207.80.139', 'localhost', 'davidbommersbach.com', 'www.davidbommersbach.com']
+ALLOWED_HOSTS = ['67.207.80.139', 'localhost', 'davidbommersbach.com', 'www.davidbommersbach.com', '127.0.0.1']
 
 
 # Application definition
