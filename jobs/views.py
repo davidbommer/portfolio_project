@@ -12,5 +12,4 @@ def job_details(request, job_id):
 
 def job_list(request):
 	jobs = Job.objects
-	print("got here")
 	return render(request, 'jobs/job_list.html', {'jobs':jobs})
